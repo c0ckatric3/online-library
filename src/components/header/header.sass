@@ -1,11 +1,18 @@
 .header
     margin-top: 20px
     width: 100%
-    display: flex
-    justify-content: space-around
+    display: grid
+    justify-items: center
     align-items: center
+    justify-content: center
+    grid-template-columns: 20% 60% 20%
 
     .favorite
+        display: grid
+        justify-self: center
+        justify-items: center
+        align-items: center
+        justify-content: center
         width: 70px
         transition: 0.7s all ease-in-out
 
@@ -25,27 +32,36 @@
         height: 45px
         border: 2px solid #26A69A
         border-radius: 10px
-        transition: 0.3s all ease-in-out
+        transition: 0.4s all ease-in-out
 
         &:hover
             color: #26A69A
             box-shadow: 4px 4px 10px #4DB6AC
 
+        &:focus
+            outline: none
+
     .account
-        display: flex
-        justify-content: space-between
+        display: grid
+        justify-self: start
+        justify-items: center
         align-items: center
-        flex-wrap: wrap
-        .logo
-            padding-right: 5px
-            width: 50px
-            height: 50px
-            border-radius: 50%
+        justify-content: center
+        grid-template-columns: 90% 10%
 
         .name
             color: white
-            font-size: 22px
-            padding-right: 10px
+            font-size: 20px
+            padding-right: 5px
+            font-weight: bold
 
         .out
             width: 30px
+            cursor: pointer
+            border-radius: 50%
+            transition: 0.4s all ease-in-out
+            &:hover
+                box-shadow: 4px 6px 10px #4DB6AC
+
+    .disabled
+        display: none
