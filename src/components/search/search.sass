@@ -7,6 +7,11 @@
     .what-is-it-i-dont-no
         width: 30px
         cursor: pointer
+        fill: white
+        transition: 0.4s all ease-in-out
+
+        &:hover
+            fill: black
 
     .search
         font-size: 20px
@@ -20,12 +25,9 @@
         &:hover,
         &:focus
             border-bottom: 1px solid black
+            &::placeholder
+                color: black
 
         &::placeholder
             color: white
-            //&:hover,
-            //&:focus
-            //    &::-webkit-input-placeholder,
-            //    &::-moz-placeholder,
-            //    &::-ms-input-placeholder
-            //        color: black
+            transition: 0.4s all ease-in-out

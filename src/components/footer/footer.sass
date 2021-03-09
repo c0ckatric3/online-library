@@ -1,9 +1,68 @@
 .footer
     display: flex
     justify-content: space-between
-    border: 1px solid red
+    border-bottom: none
+    border-radius: 10px
     margin: 0 auto
     width: 80%
+    background-color: #00695c
 
     ul
-        padding: 0
+        padding: 10px 25px
+        color: white
+
+        .title
+            width: auto
+            font-weight: bold
+            line-height: 1.8
+            position: relative
+            font-size: 14px
+            &:after
+                content: ''
+                position: absolute
+                width: 35px
+                height: 2px
+                background-color: white
+                bottom: 0
+                left: 0
+
+        li
+            color: white
+            margin: 10px 0
+            text-transform: uppercase
+            font-size: 13px
+            &:last-child
+                margin: 0
+            a
+                color: white
+                &:active
+                    color: white
+
+    .social
+        ul
+            .vk:hover
+                color: #4c75a3
+            .tg:hover
+                color: #0088cc
+            .inst:hover
+                color: #C13584
+
+    .contacts
+        ul
+            .phone:hover
+                color: black
+            .google:hover
+                color: #db4a39
+            .yandex:hover
+                color: #FFCC00
+
+    .interesting
+        ul
+            .dev:hover
+                color: #5f26ff
+            .fb:hover
+                color: #F6820D
+            .gh:hover
+                color: #211F1F
+            .ver:hover
+                color: #666666
